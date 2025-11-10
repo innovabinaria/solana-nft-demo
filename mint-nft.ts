@@ -24,11 +24,12 @@ async function main() {
 
   const mint = generateSigner(umi);
 
-  const metadataUri = "https://raw.githubusercontent.com/innovabinaria/solana-nft-assets/main/mi-primer-nft.json";
+  //const metadataUri = "https://raw.githubusercontent.com/innovabinaria/solana-nft-assets/main/mi-primer-nft.json";
+  const metadataUri = "https://raw.githubusercontent.com/innovabinaria/solana-nft-assets/main/mi-segundo-nft.json";
 
   const { signature } = await createNft(umi, {
     mint,
-    name: "Mi Primer NFT en Solana",
+    name: "Mi Segundo NFT en Solana",
     symbol: "VIK",
     uri: metadataUri,
     sellerFeeBasisPoints: percentAmount(5), // 5% royalties
